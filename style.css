@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: hsl(234, 29%, 20%);
+    background-color: hsl(235, 18%, 26%);
 }
 
 
@@ -32,6 +32,62 @@ body {
     font-size: 3em;
 }
 
+.card-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-icon img {
+    height: 1.4em;
+}
+
+
+
+/* FORM */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.label {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+form input {
+    width: 90%;
+    margin-right: auto;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
+}
+
+.input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(155, 155, 155);
+}
+
+form .submit {
+    cursor: pointer;
+    width: 90%;
+    margin-right: auto;
+    padding: 1.2em;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: #FFF;
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+}
 
 
 
