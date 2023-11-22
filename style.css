@@ -18,7 +18,9 @@ body {
     display: flex;
     background-color: #FFF;
     border-radius: 2em;
-    padding: 1.7em 1.7em 1.7em 4em;
+    justify-content: space-between;
+    padding: 1.7em 1.7em 1.7em 5em;
+    gap: 2.5em;
 }
 
 .card-content {
@@ -51,13 +53,18 @@ body {
 }
 
 
+.card-img-mobile {
+    display: none;
+}
+
+
 
 /* FORM */
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 0.8em;
+    gap: 1.5em;
 }
 
 .label {
@@ -93,7 +100,7 @@ form .submit {
 }
 
 form .submit:hover {
-    background: linear-gradient(to right, #ff0072, #ff7f27);
+    background: linear-gradient(to right, #ff2f8d, #ff7f27);
 }
 
 
@@ -101,7 +108,45 @@ form .submit:hover {
 /* CLASSES GENERALES */
 
 .container {
-    width: 80%;
+    max-width: 65em;
     margin: 15vh auto;
+}
+
+
+@media(max-width:800px) {
+
+    body {
+        background-color: #FFF;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        border-radius: 0;
+        padding: 1.3em 1.3em 4em 1.3em;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .card-content h1 {
+        font-size: 2.2em;
+    }
+
+    .card-img-desktop {
+        display: none;
+    }
+
+    .card-img-mobile {
+        display: block;
+    }
+
+
 
 }
