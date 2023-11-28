@@ -101,12 +101,10 @@ form .submit {
     border-radius: 0.5em;
     font-weight: bold;
     font-size: 1em;
-    transition: 0.2s;
 }
 
 form .submit:hover {
     background: linear-gradient(to right, #ff2f8d, #ff7f27);
-    transition: 0.2s;
 }
 
 #email-error-message {
@@ -137,7 +135,14 @@ form .submit:hover {
     line-height: 1.5em;
 }
 
+
+.dismiss-btn:hover {
+    background: linear-gradient(to right, #ff2f8d, #ff7f27);
+}
+
 .dismiss-btn {
+    text-decoration: none;
+    color: #FFF;
     cursor: pointer;
     width: 90%;
     margin-right: auto;
@@ -150,8 +155,11 @@ form .submit:hover {
     font-size: 1em;
 }
 
-.dismiss-btn:hover {
-    background: linear-gradient(to right, #ff2f8d, #ff7f27);
+.dismiss-btn a {
+    text-decoration: none;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
 }
 
 .card-img-mobile-thank {
