@@ -46,8 +46,10 @@
           <div>
             <form action="">
               <label class="label" for="email">Email address</label>
-              <input class="input" type="email" placeholder="email@company.com">
-              <input class="submit" type="submit" value="Subscribe to monthly newsletter">
+              <div id="email-error-message" class="error-message"></div>
+              <div id="email-success-message" class="success-message"></div>
+              <input id="email" class="input" type="email" placeholder="email@company.com">
+              <input id="submitButton" class="submit" type="submit" value="Subscribe to monthly newsletter">
             </form>
           </div>
         </div>

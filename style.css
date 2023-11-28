@@ -52,6 +52,10 @@ body {
     height: 1.4em;
 }
 
+.card-icon .thank-icon {
+    height: 3.7em;
+}
+
 
 .card-img-mobile {
     display: none;
@@ -97,13 +101,58 @@ form .submit {
     border-radius: 0.5em;
     font-weight: bold;
     font-size: 1em;
+    transition: 0.2s;
 }
 
 form .submit:hover {
     background: linear-gradient(to right, #ff2f8d, #ff7f27);
+    transition: 0.2s;
+}
+
+#email-error-message {
+    position: absolute;
+    padding-left: 280px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: red;
+}
+
+#email-success-message {
+    position: absolute;
+    padding-left: 20px;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: bold;
+    color: green;
+}
+
+.error {
+    border-color: red;
 }
 
 
+/* THANKS PAGE */
+
+.thank-p {
+    line-height: 1.5em;
+}
+
+.dismiss-btn {
+    cursor: pointer;
+    width: 90%;
+    margin-right: auto;
+    padding: 1.2em;
+    border: none;
+    background-color: hsl(234, 29%, 20%);
+    color: #FFF;
+    border-radius: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.dismiss-btn:hover {
+    background: linear-gradient(to right, #ff2f8d, #ff7f27);
+}
 
 /* CLASSES GENERALES */
 
@@ -112,6 +161,13 @@ form .submit:hover {
     margin: 15vh auto;
 }
 
+.container-sm {
+    max-width: 27em;
+    margin: 15vh auto;
+}
+
+
+/* MEDIA QUERIES */
 
 @media(max-width:800px) {
 
