@@ -154,6 +154,10 @@ form .submit:hover {
     background: linear-gradient(to right, #ff2f8d, #ff7f27);
 }
 
+.card-img-mobile-thank {
+    display: none;
+}
+
 /* CLASSES GENERALES */
 
 .container {
@@ -163,7 +167,7 @@ form .submit:hover {
 
 .container-sm {
     max-width: 27em;
-    margin: 15vh auto;
+    margin: 20vh auto;
 }
 
 
@@ -201,6 +205,10 @@ form .submit:hover {
 
     .card-img-mobile {
         display: block;
+    }
+
+    .card-img-mobile-thank {
+        display: none;
     }
 
 

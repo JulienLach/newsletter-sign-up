@@ -1,33 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-
     document.getElementById('submitButton').addEventListener('click', function () {
-        var emailInput = document.getElementById('email');
-        var emailValue = emailInput.value.trim();
-        var emailErrorMessage = document.getElementById('email-error-message');
-        var emailSuccessMessage = document.getElementById('email-success-message');
-
+        const emailInput = document.getElementById('email');
+        const emailValue = emailInput.value.trim();
+        const emailErrorMessage = document.getElementById('email-error-message');
 
         // Regular expression to validate email format
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (!emailValue || !emailRegex.test(emailValue)) {
+            // Invalid email
             emailInput.classList.add('error');
-            alert('Please enter a valid email address.');
             emailErrorMessage.innerText = 'Valid email required';
-            emailSuccessMessage.innerText = '';
-
-        }
-
-        else {
+        } else {
+            // Valid email
             emailInput.classList.remove('error');
-            alert('Form submitted successfully!');
-            emailErrorMessage.innerText = ''; // Clear error message
+            emailErrorMessage.innerText = '';
+            alert('Redirecting to thank.html');
+            window.location.href = 'thank.html';
         }
-
-
     });
-
-
 
 });
